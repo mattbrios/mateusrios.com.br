@@ -32,8 +32,8 @@ export const Sidebar = () => {
           alt="Ilustração em 3D de um personagem elucidando a figura de Mateus Rios"
           height={160}
           width={160}
-          objectFit="cover"
           className="mx-auto mt-[-80px] mb-4"
+          style={{ objectFit: "contain" }}
         />
         <h1 className="text-2xl font-bold mb-2">Mateus Branco Rios</h1>
         <h2 className="text-base">Desenvolvedor Full Stack & UI Designer</h2>
