@@ -42,10 +42,7 @@ export default function Home() {
           property="og:description"
           content={`Por aqui você vê um breve resumo de tudo que passei nestes mais de 16 anos de experiência como dev, designer, tech lead e 'quebra-galho' em todos as etapas e processos do desenvolvimento de software web.`}
         />
-        <meta
-          property="og:image"
-          content="https://blds-bigtesterv2.s3.amazonaws.com/assets/og.png"
-        />
+        <meta property="og:image" content="/images/og.jpg" />
         <meta property="og:url" content="https://www.mateusrios.com.br/" />
       </Head>
       <Layout>
