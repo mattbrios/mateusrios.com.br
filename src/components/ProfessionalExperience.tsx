@@ -156,7 +156,7 @@ export const ProfessionalExperience = () => {
             className={`p-2 my-4 ${index % 2 !== 0 ? "bg-background2" : ""}`}
           >
             <div>
-              <p className="text-xl font-bold uppercase">{xp.company}</p>
+              <h3 className="text-xl font-bold uppercase">{xp.company}</h3>
               <div className="mb-4">
                 {xp.position.map((position, i) => (
                   <div key={`position_${index}_${i}`}>

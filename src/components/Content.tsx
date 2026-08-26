@@ -5,7 +5,7 @@ import { TechClasses } from "./TechClasses";
 import { Paragraph } from "./Paragraph";
 
 const SubTitle = ({ children }: { children: React.ReactNode }) => {
-  return <p className="text-lg font-bold uppercase px-2">{children}</p>;
+  return <h3 className="text-lg font-bold uppercase px-2">{children}</h3>;
 };
 
 export const Content = () => {
