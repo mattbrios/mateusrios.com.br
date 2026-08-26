@@ -1,6 +1,13 @@
-import React, { Fragment } from "react";
+import React from "react";
 import { Title } from "./Title";
-const data = [
+
+interface TechClass {
+  title: string;
+  place: string;
+  duration: number;
+}
+
+const data: TechClass[] = [
   {
     title: "Formação em React - Rocketseat Ignite",
     place: "Rocketseat",
@@ -87,6 +94,7 @@ const data = [
     duration: 4,
   },
 ];
+
 export const TechClasses = () => {
   return (
     <div className="my-12">
@@ -94,7 +102,7 @@ export const TechClasses = () => {
       {data.map((theClass, index) => (
         <div
           key={`class_${index}`}
-          className={`p-2 my-1 ${index % 2 !== 0 && "bg-background2"}`}
+          className={`p-2 my-1 ${index % 2 !== 0 ? "bg-background2" : ""}`}
         >
           <p className="font-bold">
             {theClass.title}{" "}

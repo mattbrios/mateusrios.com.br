@@ -9,6 +9,7 @@ export const Header = () => {
           src="/images/headerbrain.png"
           alt="Imagem de capa simbolizando um cérebro com o lado lógico, racional e retilíneo e outro criativo, sonhador e imaginário."
           fill
+          preload
           style={{ objectFit: "cover" }}
         />
       </div>

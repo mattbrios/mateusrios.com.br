@@ -1,9 +1,8 @@
-import Image from "next/image";
 import React from "react";
 
 export const Footer = () => {
   return (
-    <footer className="py-20 bg-background2 flex items-center justify-center mt-[-40px]">
+    <footer className="py-20 bg-background2 flex items-center justify-center -mt-10">
       <picture>
         <source
           srcSet="/images/logo_mr-dark.png"
