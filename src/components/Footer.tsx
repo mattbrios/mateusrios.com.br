@@ -2,7 +2,7 @@ import React from "react";
 
 export const Footer = () => {
   return (
-    <footer className="py-20 bg-background2 flex items-center justify-center -mt-10">
+    <footer className="py-8 bg-background  flex items-center justify-center -mt-10">
       <picture>
         <source
           srcSet="/images/logo_mr-dark.png"
@@ -15,7 +15,7 @@ export const Footer = () => {
         <img
           src="/images/logo_mr-dark.png"
           alt="Logo MR - Mateus Rios"
-          width={224}
+          width={200}
           style={{ objectFit: "contain" }}
         />
       </picture>
