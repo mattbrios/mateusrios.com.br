@@ -14,7 +14,7 @@ describe("Skills", () => {
     expect(screen.getByText("TypeScript")).toBeInTheDocument();
 
     expect(
-      screen.getByRole("heading", { name: "Backend Development" })
+      screen.getByRole("heading", { name: "Backend e Arquitetura" })
     ).toBeInTheDocument();
     expect(screen.getByText("Node.js")).toBeInTheDocument();
   });
@@ -26,6 +26,8 @@ describe("Skills", () => {
       screen.getByRole("heading", { name: "Idiomas" })
     ).toBeInTheDocument();
     expect(screen.getByText("Português: Nativo")).toBeInTheDocument();
-    expect(screen.getByText("Inglês: Avançado (B2)")).toBeInTheDocument();
+    expect(
+      screen.getByText("Inglês: Avançado / Profissional Pleno")
+    ).toBeInTheDocument();
   });
 });

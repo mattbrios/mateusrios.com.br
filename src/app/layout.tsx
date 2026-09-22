@@ -2,6 +2,7 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
+import { calcExperienceYears } from "@/lib/profile";
 import "./globals.css";
 
 const geistSans = Geist({
@@ -16,8 +17,9 @@ const geistMono = Geist_Mono({
 
 const SITE_URL = "https://www.mateusrios.com.br";
 const TITLE = "Eu sou Mateus Rios | Seja bem vindo e sinta-se a vontade!";
-const DESCRIPTION =
-  "Por aqui você vê um breve resumo de tudo que passei nestes mais de 16 anos de experiência como dev, designer, tech lead e quebra-galho em todos as etapas e processos do desenvolvimento de software web.";
+const DESCRIPTION = `Desenvolvedor Full Stack Sênior com foco em Front-end (React, Next.js, Node.js, TypeScript) e UI/UX Design. Mais de ${calcExperienceYears()} anos como dev, designer e tech lead em todas as etapas do desenvolvimento de software web.`;
+const EMAIL = "mattbrios@gmail.com";
+const PHONE = "+55 15 99623-6179";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -39,9 +41,15 @@ export const metadata: Metadata = {
     "React",
     "Next.js",
     "TypeScript",
+    "Node.js",
+    "NestJS",
+    "full stack",
     "UI/UX",
     "Design Systems",
-    "Senior Software Engineer",
+    "Spec Driven Development",
+    "Claude Code",
+    "desenvolvimento assistido por IA",
+    "Desenvolvedor Full Stack Sênior",
   ],
   authors: [{ name: "Mateus Rios", url: SITE_URL }],
   creator: "Mateus Rios",
@@ -77,7 +85,7 @@ export const metadata: Metadata = {
         url: "/images/og.jpg",
         width: 1200,
         height: 627,
-        alt: "Mateus Rios - Front-end Engineer",
+        alt: "Mateus Rios - Desenvolvedor Full Stack Sênior com foco em Front-end",
       },
     ],
   },
@@ -101,7 +109,7 @@ const personJsonLd = {
   "@type": "Person",
   name: "Mateus Branco Rios",
   alternateName: "Mateus Rios",
-  jobTitle: "Front-end Engineer",
+  jobTitle: "Desenvolvedor Full Stack Sênior",
   description: DESCRIPTION,
   url: SITE_URL,
   image: `${SITE_URL}/images/memoji.png`,
@@ -111,9 +119,21 @@ const personJsonLd = {
     "https://www.behance.net/mattbrios",
     "https://www.instagram.com/mattbrios/",
   ],
+  email: EMAIL,
+  telephone: PHONE,
+  knowsAbout: [
+    "React",
+    "Next.js",
+    "TypeScript",
+    "Node.js",
+    "NestJS",
+    "UI/UX Design",
+    "Design Systems",
+    "Spec Driven Development",
+  ],
   worksFor: {
     "@type": "Organization",
-    name: "Impacting Group",
+    name: "Big Cupom",
   },
   alumniOf: {
     "@type": "CollegeOrUniversity",

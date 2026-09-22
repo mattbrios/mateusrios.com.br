@@ -2,13 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Skills } from "./Skills";
 import { SocialSection } from "./SocialSection";
-
-const BORN_YEAR = 1990;
-const WORKING_SINCE_YEAR = 2008;
-
-export const calcAge = () => new Date().getFullYear() - BORN_YEAR;
-export const calcExperienceYears = () =>
-  new Date().getFullYear() - WORKING_SINCE_YEAR;
+import { calcAge, calcExperienceYears } from "@/lib/profile";
 
 interface CellProps {
   children: React.ReactNode;
@@ -38,8 +32,8 @@ export const Sidebar = () => {
         />
         <h1 className="text-2xl font-bold mb-2">Mateus Branco Rios</h1>
         <h2 className="text-sm mb-2">
-          Engenheiro de Software Sênior | Frontend-focused | React • Next.js •
-          TypeScript | UI/UX & Design Systems
+          Desenvolvedor Full Stack Sênior com foco em Front-end | React •
+          Next.js • Node.js • TypeScript | Spec Driven Development com IA
         </h2>
         <div className="flex items-center justify-center mb-2 gap-1 bg-background3 p-1 rounded-full">
           <Image
@@ -48,7 +42,9 @@ export const Sidebar = () => {
             height={16}
             width={16}
           />
-          <span className="leading-none text-sm">São Paulo, Brasil</span>
+          <span className="leading-none text-sm">
+            São Paulo, Brasil (Remoto)
+          </span>
         </div>
         <table className="table-fixed w-full my-4">
           <tbody>

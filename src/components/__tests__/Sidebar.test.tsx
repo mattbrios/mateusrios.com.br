@@ -1,6 +1,7 @@
 import { render, screen } from "@testing-library/react";
 import { describe, expect, it } from "vitest";
-import { Sidebar, calcAge, calcExperienceYears } from "@/components/Sidebar";
+import { Sidebar } from "@/components/Sidebar";
+import { calcAge, calcExperienceYears } from "@/lib/profile";
 
 describe("calcAge", () => {
   it("computes age from the 1990 birth year", () => {
@@ -9,8 +10,8 @@ describe("calcAge", () => {
 });
 
 describe("calcExperienceYears", () => {
-  it("computes years of experience since 2008", () => {
-    expect(calcExperienceYears()).toBe(new Date().getFullYear() - 2008);
+  it("computes years of experience since 2010", () => {
+    expect(calcExperienceYears()).toBe(new Date().getFullYear() - 2010);
   });
 });
 

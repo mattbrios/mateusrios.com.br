@@ -15,40 +15,44 @@ interface Experience {
 
 const data: Experience[] = [
   {
-    company: "Impacting Group / Beeleads",
+    company: "Big Cupom",
     position: [
       {
-        title: "Full Stack Developer & UI Designer",
-        period: "Julho 2018 aos dias atuais",
+        title: "Desenvolvedor Full Stack Sênior (foco em Front-end & UI/UX)",
+        period: "Junho 2018 aos dias atuais",
         locale: "Remoto - São Paulo, SP / Itajubá, MG",
       },
     ],
     achievements: [
-      "Desenvolveu e manteve 70+ aplicações web modernas utilizando React, Next.js e Node.js, atendendo mais de 8 milhões de cadastros e mais de 15 mil usuários simultâneos.",
-      "Estruturou uma arquitetura completa de identidade visual mediante customização estratégica de frameworks como Material UI e Tailwind CSS, assegurando conformidade total com as especificações visuais e implementação Pixel Perfect.",
+      "Arquitetou e evoluiu 70+ aplicações full stack com React, Next.js, Node.js e TypeScript, atendendo mais de 8 milhões de cadastros e picos de 15 mil usuários simultâneos.",
+      "Adotou desenvolvimento assistido por IA com Claude Code na implementação de features, refatoração, testes, code review e documentação técnica.",
       "Gerenciou a pipeline de CI/CD através da Vercel e AWS Amplify, automatizando deploys e reduzindo o tempo de release em 66%.",
-      "Liderou code reviews e implementou boas práticas de Clean Code, resultando em redução de retornos após o release de produção e o retrabalho.",
+      "Criou e manteve Design Systems e padrões de UI para múltiplos produtos, acelerando o desenvolvimento em 25%.",
+      "Implementou testes automatizados com Jest e React Testing Library, reduzindo em 33% os bugs em produção.",
+      "Estruturou uma arquitetura completa de identidade visual mediante customização estratégica de frameworks como Material UI e Tailwind CSS, assegurando conformidade total com as especificações visuais e implementação Pixel Perfect.",
+      "Entregou ponta a ponta: do wireframe e protótipo no Figma à implementação front-end e back-end com Node.js e APIs REST.",
+      "Liderou code reviews, definição de padrões técnicos e decisões de arquitetura de software.",
       "Administrou serviços AWS incluindo Amplify, S3, IAM e Route53, otimizando custos, melhorando configurações e reforçando a segurança de infraestrutura.",
       "Criou designs de interface completos para mais de 50 produtos digitais, utilizando Figma, Adobe Illustrator e Photoshop em todo o processo — desde wireframes iniciais até protótipos finais interativos.",
-      "Desenvolveu e manteve Design System corporativo, garantindo consistência visual em todas as aplicações.",
-      "Integrou backend e frontend através de APIs REST, implementando autenticação e autorização seguras.",
-      "Implementou testes unitários e de componentes com Jest e React Testing Library, elevando a cobertura de código e reduzindo bugs em produção.",
       "Criou documentos de guia de design, tipografia, paleta de cores, aplicação de marca e vídeos de usabilidade, visando a consistência da marca.",
       "Colaborou com equipes multidisciplinares para definir estilos, componentes, padrões visuais e tecnologias reutilizáveis.",
     ],
   },
   {
-    company: "Freelancer",
+    company: "Brios 3D",
     position: [
       {
-        title: "Desenvolvimento de software (front-end & design)",
-        period: "Desde 2014",
+        title: "Fundador & Desenvolvedor Full Stack",
+        period: "Agosto 2026 aos dias atuais",
+        locale: "São Paulo, SP",
       },
     ],
     achievements: [
-      "Realizou trabalhos de desenvolvimento front-end, UI/UX, identidade visual e produtos digitais para clientes e projetos independentes.",
-      "Entregou identidades visuais, redesign de sites e apps, artes para redes sociais, UI para web e mobile, modernização de projetos legado e apresentações comerciais.",
-      "Utilizou ReactJS, JQuery, WordPress ou o trio HTML, CSS e JS puro, conforme a necessidade de cada projeto.",
+      "Fundou e conduz um negócio próprio de impressão 3D, acumulando a operação e o desenvolvimento do produto digital.",
+      "Desenvolveu um SaaS de gestão operacional (custos, estoque e vendas) com arquitetura de microsserviços.",
+      "Construiu o backend em Node.js e NestJS com TypeScript strict, PostgreSQL e Docker; frontend em React e Next.js.",
+      "Adotou Spec Driven Development com Claude Code, utilizando especificações detalhadas para guiar a implementação e a geração de testes.",
+      "Criou suíte de testes automatizados unitários com Vitest e testes E2E com Playwright.",
     ],
   },
   {
@@ -61,12 +65,11 @@ const data: Experience[] = [
       },
     ],
     achievements: [
-      "Liderou e foi mentor de equipe técnica de até 23 desenvolvedores em projetos web e mobile de grande escala.",
+      "Liderou e foi mentor de equipe técnica de até 23 desenvolvedores em projetos web e mobile de grande escala, incluindo processo seletivo e capacitação.",
       "Definiu arquitetura frontend e backend para aplicações utilizando HTML5, CSS3, PHP, CodeIgniter, MySQL, AngularJS e Ionic.",
-      "Desenvolveu e supervisionou todo o fluxo de UI Design e práticas de UX, criando interfaces para mais de 10 aplicações.",
+      "Desenvolveu e supervisionou todo o fluxo de UI Design e práticas de UX, criando interfaces para mais de 10 aplicações — dos wireframes ao código final.",
       "Desenvolveu padrões de design e componentização, reduzindo o tempo de desenvolvimento.",
       "Atuou como ponte entre equipes técnicas, clientes e demais stakeholders, traduzindo necessidades de negócio em soluções de produto e tecnologia.",
-      "Participou da seleção, capacitação e desenvolvimento de profissionais, contribuindo para a evolução técnica e organizacional da equipe.",
     ],
   },
   {
@@ -79,8 +82,8 @@ const data: Experience[] = [
       },
     ],
     achievements: [
-      "Gerenciou 10+ projetos simultâneos utilizando metodologias ágeis (Scrum).",
-      "Coordenou cronogramas, recursos e stakeholders, mantendo 100% de entregas no prazo.",
+      "Gerenciou 10+ projetos web simultâneos utilizando práticas ágeis inspiradas em Scrum, mantendo 100% de entregas no prazo.",
+      "Coordenou cronogramas, recursos e stakeholders, com background técnico que facilitava decisões entre negócio e desenvolvimento.",
       "Acompanhou todos os processos de desenvolvimento, controle de qualidade, testes e entrega.",
     ],
   },
@@ -88,7 +91,7 @@ const data: Experience[] = [
     company: "Savoir Tecnologia",
     position: [
       {
-        title: "Team Leader",
+        title: "Líder de time / Coordenador de desenvolvimento ActionScript & Mobile",
         period: "2011 - 2013",
         locale: "Itajubá / MG",
       },
@@ -96,14 +99,14 @@ const data: Experience[] = [
     achievements: [
       "Foi promovido a líder de equipe de desenvolvimento, coordenando uma equipe de ActionScript 3 e mobile.",
       "Mentorou mais de 6 desenvolvedores juniores em tecnologias web/mobile.",
-      "Implementou a transição da estrutura de controle de versão do TortoiseSVN para Git.",
+      "Estruturou a transição do controle de versão de TortoiseSVN para Git e a padronização do desenvolvimento.",
     ],
   },
   {
     company: "Savoir Tecnologia",
     position: [
       {
-        title: "Programador AS3",
+        title: "Desenvolvedor ActionScript Júnior",
         period: "2010 - 2011",
         locale: "Itajubá / MG",
       },

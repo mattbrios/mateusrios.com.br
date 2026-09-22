@@ -8,6 +8,16 @@ interface Social {
 
 const data: Social[] = [
   {
+    name: "E-mail",
+    icon: "/images/mail.svg",
+    link: "mailto:mattbrios@gmail.com",
+  },
+  {
+    name: "WhatsApp",
+    icon: "/images/whatsapp.svg",
+    link: "https://wa.me/5515996236179",
+  },
+  {
     name: "Instagram",
     icon: "/images/instagram.svg",
     link: "https://www.instagram.com/mattbrios/",
@@ -22,11 +32,6 @@ const data: Social[] = [
     icon: "/images/behance.svg",
     link: "https://www.behance.net/mattbrios",
   },
-  // {
-  //   name: "E-mail",
-  //   icon: "/images/mail.svg",
-  //   link: "mailto:info@mailgo.dev",
-  // },
   {
     name: "Github",
     icon: "/images/github.svg",
