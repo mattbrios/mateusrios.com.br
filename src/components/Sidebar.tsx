@@ -2,7 +2,7 @@ import Image from "next/image";
 import React from "react";
 import { Skills } from "./Skills";
 import { SocialSection } from "./SocialSection";
-import { calcAge, calcExperienceYears } from "@/lib/profile";
+import { calcExperienceYears } from "@/lib/profile";
 
 interface CellProps {
   children: React.ReactNode;
@@ -49,18 +49,18 @@ export const Sidebar = () => {
         <table className="table-fixed w-full my-4">
           <tbody>
             <tr>
-              <Cell description="anos">{calcAge()}</Cell>
               <Cell description="anos de experiência">
                 +{calcExperienceYears()}
               </Cell>
+              <Cell description="cadastros atendidos">+8M</Cell>
             </tr>
             <tr>
-              <Cell description="projetos desenvolvidos">+500</Cell>
-              <Cell description="componentes React criados">+1.970</Cell>
+              <Cell description="usuários simultâneos">+15k</Cell>
+              <Cell description="aplicações em produção">+70</Cell>
             </tr>
             <tr>
-              <Cell description="projetos no Figma">+90</Cell>
-              <Cell description="maior time gerenciado">23</Cell>
+              <Cell description="produtos digitais desenhados">+50</Cell>
+              <Cell description="devs no maior time liderado">23</Cell>
             </tr>
           </tbody>
         </table>

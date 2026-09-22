@@ -22,9 +22,10 @@ describe("Sidebar", () => {
     expect(
       screen.getByRole("heading", { name: "Mateus Branco Rios" })
     ).toBeInTheDocument();
-    expect(screen.getByText(String(calcAge()))).toBeInTheDocument();
     expect(
       screen.getByText(`+${calcExperienceYears()}`)
     ).toBeInTheDocument();
+    expect(screen.getByText("+8M")).toBeInTheDocument();
+    expect(screen.getByText("+70")).toBeInTheDocument();
   });
 });

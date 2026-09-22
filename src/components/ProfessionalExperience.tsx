@@ -5,187 +5,183 @@ interface Position {
   title: string;
   period: string;
   locale?: string;
+  achievements: string[];
 }
 
 interface Experience {
   company: string;
-  position: Position[];
-  achievements: string[];
+  period?: string;
+  locale?: string;
+  summary?: string;
+  positions: Position[];
 }
 
 const data: Experience[] = [
   {
     company: "Big Cupom",
-    position: [
+    positions: [
       {
         title: "Desenvolvedor Full Stack Sênior (foco em Front-end & UI/UX)",
         period: "Junho 2018 aos dias atuais",
         locale: "Remoto - São Paulo, SP / Itajubá, MG",
+        achievements: [
+          "Arquitetura e evolução de 70+ aplicações full stack com React, Next.js, Node.js e TypeScript, para uma base de 8M+ cadastros, com picos de 15 mil usuários simultâneos.",
+          "Desenvolvimento assistido por IA com Claude Code na implementação de features, refatoração, testes, code review e documentação.",
+          "Automação de CI/CD (Vercel e AWS Amplify), reduzindo em 66% o tempo de release.",
+          "Criação e manutenção de Design Systems e padrões de UI para múltiplos produtos, reduzindo em 25% o tempo de desenvolvimento.",
+          "Testes automatizados com Jest e React Testing Library, reduzindo em 33% os bugs em produção.",
+          "Entrega ponta a ponta: do wireframe e protótipo à implementação front-end e back-end (Node.js, APIs REST).",
+          "Code review, definição de padrões técnicos e decisões de arquitetura.",
+        ],
       },
-    ],
-    achievements: [
-      "Arquitetou e evoluiu 70+ aplicações full stack com React, Next.js, Node.js e TypeScript, atendendo mais de 8 milhões de cadastros e picos de 15 mil usuários simultâneos.",
-      "Adotou desenvolvimento assistido por IA com Claude Code na implementação de features, refatoração, testes, code review e documentação técnica.",
-      "Gerenciou a pipeline de CI/CD através da Vercel e AWS Amplify, automatizando deploys e reduzindo o tempo de release em 66%.",
-      "Criou e manteve Design Systems e padrões de UI para múltiplos produtos, acelerando o desenvolvimento em 25%.",
-      "Implementou testes automatizados com Jest e React Testing Library, reduzindo em 33% os bugs em produção.",
-      "Estruturou uma arquitetura completa de identidade visual mediante customização estratégica de frameworks como Material UI e Tailwind CSS, assegurando conformidade total com as especificações visuais e implementação Pixel Perfect.",
-      "Entregou ponta a ponta: do wireframe e protótipo no Figma à implementação front-end e back-end com Node.js e APIs REST.",
-      "Liderou code reviews, definição de padrões técnicos e decisões de arquitetura de software.",
-      "Administrou serviços AWS incluindo Amplify, S3, IAM e Route53, otimizando custos, melhorando configurações e reforçando a segurança de infraestrutura.",
-      "Criou designs de interface completos para mais de 50 produtos digitais, utilizando Figma, Adobe Illustrator e Photoshop em todo o processo — desde wireframes iniciais até protótipos finais interativos.",
-      "Criou documentos de guia de design, tipografia, paleta de cores, aplicação de marca e vídeos de usabilidade, visando a consistência da marca.",
-      "Colaborou com equipes multidisciplinares para definir estilos, componentes, padrões visuais e tecnologias reutilizáveis.",
     ],
   },
   {
     company: "Brios 3D",
-    position: [
+    summary:
+      "Negócio próprio de impressão 3D, onde conduzo a operação e o desenvolvimento do produto digital.",
+    positions: [
       {
         title: "Fundador & Desenvolvedor Full Stack",
         period: "Agosto 2026 aos dias atuais",
         locale: "São Paulo, SP",
+        achievements: [
+          "Desenvolvimento de SaaS de gestão operacional (custos, estoque e vendas) com arquitetura de microsserviços.",
+          "Back-end em Node.js e NestJS com TypeScript strict, PostgreSQL e Docker; front-end em React e Next.js.",
+          "Adoção de Spec Driven Development com Claude Code, partindo de especificações detalhadas para guiar a implementação e a geração de testes.",
+          "Criação de suíte de testes automatizados unitários com Vitest e testes E2E com Playwright.",
+        ],
       },
-    ],
-    achievements: [
-      "Fundou e conduz um negócio próprio de impressão 3D, acumulando a operação e o desenvolvimento do produto digital.",
-      "Desenvolveu um SaaS de gestão operacional (custos, estoque e vendas) com arquitetura de microsserviços.",
-      "Construiu o backend em Node.js e NestJS com TypeScript strict, PostgreSQL e Docker; frontend em React e Next.js.",
-      "Adotou Spec Driven Development com Claude Code, utilizando especificações detalhadas para guiar a implementação e a geração de testes.",
-      "Criou suíte de testes automatizados unitários com Vitest e testes E2E com Playwright.",
     ],
   },
   {
     company: "Savoir Tecnologia",
-    position: [
+    period: "Abril 2010 - Junho 2018 · 8 anos 3 meses",
+    locale: "Itajubá e Região / São Paulo, Brasil",
+    positions: [
       {
         title: "Tech Leader & UX/UI Designer",
-        period: "2014 - 2018",
-        locale: "Itajubá / MG",
+        period: "Março 2014 - Junho 2018 · 4 anos 4 meses",
+        locale: "Itajubá e Região, Brasil",
+        achievements: [
+          "Liderança e mentoria de uma equipe de até 23 desenvolvedores em projetos web e mobile, incluindo seleção e capacitação de profissionais.",
+          "Definição de arquiteturas front-end e back-end com PHP, CodeIgniter, MySQL, AngularJS e Ionic.",
+          "Concepção e implementação de interfaces para 10+ aplicações, dos fluxos e wireframes ao código.",
+          "Criação de padrões de design e componentização reutilizável, aumentando a consistência visual e reduzindo o tempo de desenvolvimento.",
+          "Ponte entre equipes técnicas, clientes e stakeholders, traduzindo necessidades de negócio em soluções de produto.",
+        ],
       },
-    ],
-    achievements: [
-      "Liderou e foi mentor de equipe técnica de até 23 desenvolvedores em projetos web e mobile de grande escala, incluindo processo seletivo e capacitação.",
-      "Definiu arquitetura frontend e backend para aplicações utilizando HTML5, CSS3, PHP, CodeIgniter, MySQL, AngularJS e Ionic.",
-      "Desenvolveu e supervisionou todo o fluxo de UI Design e práticas de UX, criando interfaces para mais de 10 aplicações — dos wireframes ao código final.",
-      "Desenvolveu padrões de design e componentização, reduzindo o tempo de desenvolvimento.",
-      "Atuou como ponte entre equipes técnicas, clientes e demais stakeholders, traduzindo necessidades de negócio em soluções de produto e tecnologia.",
-    ],
-  },
-  {
-    company: "Savoir Tecnologia",
-    position: [
       {
         title: "Gerente de Projetos",
-        period: "2013 - 2014",
-        locale: "São Paulo / SP",
+        period: "Junho 2013 - Março 2014 · 10 meses",
+        locale: "São Paulo, Brasil",
+        achievements: [
+          "Gestão simultânea de 10+ projetos web com práticas ágeis inspiradas em Scrum, com 100% das entregas no prazo.",
+          "Coordenação de cronogramas, recursos e stakeholders, com background técnico que facilitava decisões entre negócio e desenvolvimento.",
+        ],
       },
-    ],
-    achievements: [
-      "Gerenciou 10+ projetos web simultâneos utilizando práticas ágeis inspiradas em Scrum, mantendo 100% de entregas no prazo.",
-      "Coordenou cronogramas, recursos e stakeholders, com background técnico que facilitava decisões entre negócio e desenvolvimento.",
-      "Acompanhou todos os processos de desenvolvimento, controle de qualidade, testes e entrega.",
-    ],
-  },
-  {
-    company: "Savoir Tecnologia",
-    position: [
       {
-        title: "Líder de time / Coordenador de desenvolvimento ActionScript & Mobile",
-        period: "2011 - 2013",
-        locale: "Itajubá / MG",
+        title:
+          "Líder de time / Coordenador de desenvolvimento ActionScript & Mobile",
+        period: "Janeiro 2011 - Maio 2013 · 2 anos 5 meses",
+        locale: "Itajubá e Região, Brasil",
+        achievements: [
+          "Promoção a líder de time da equipe de ActionScript 3 e mobile, mantendo atuação técnica direta nos projetos.",
+          "Mentoria de 6+ desenvolvedores em início de carreira.",
+          "Definição de padrões de desenvolvimento e estruturação da transição do controle de versão de SVN para Git.",
+        ],
       },
-    ],
-    achievements: [
-      "Foi promovido a líder de equipe de desenvolvimento, coordenando uma equipe de ActionScript 3 e mobile.",
-      "Mentorou mais de 6 desenvolvedores juniores em tecnologias web/mobile.",
-      "Estruturou a transição do controle de versão de TortoiseSVN para Git e a padronização do desenvolvimento.",
-    ],
-  },
-  {
-    company: "Savoir Tecnologia",
-    position: [
       {
         title: "Desenvolvedor ActionScript Júnior",
-        period: "2010 - 2011",
-        locale: "Itajubá / MG",
+        period: "Abril 2010 - Dezembro 2010 · 9 meses",
+        locale: "Itajubá e Região, Brasil",
+        achievements: [
+          "Desenvolvimento de aplicações interativas e componentes reutilizáveis em ActionScript 3 para grandes marcas nacionais.",
+        ],
       },
-    ],
-    achievements: [
-      "Desenvolveu aplicações interativas em ActionScript 3 para grandes marcas nacionais.",
-      "Criou componentes reutilizáveis com animações complexas, resultando em interfaces dinâmicas e altamente interativas.",
     ],
   },
   {
     company: "UNIFEI - Universidade Federal de Itajubá",
-    position: [
+    positions: [
       {
         title: "Monitor e programador Java",
-        period: "01-2010 - 06-2010",
+        period: "Janeiro 2010 - Junho 2010 · 6 meses",
         locale: "Itajubá / MG",
+        achievements: [
+          "Monitoria nos laboratórios de sistemas de informação e administração do IEPG - Instituto de Engenharia de Produção e Gestão.",
+          "Desenvolvimento, em Java, do projeto inicial de gerenciamento de patrimônio do instituto para a rede local.",
+          "Suporte a software, hardware e rede nos laboratórios e salas do Instituto.",
+        ],
       },
-    ],
-    achievements: [
-      "Atuou como monitor nos laboratórios de sistemas de informação e administração do IEPG - Instituto de Engenharia de Produção e Gestão.",
-      "Desenvolveu, em Java, o projeto inicial de gerenciamento de patrimônio do instituto para a rede local.",
-      "Deu suporte a software, hardware e rede nos laboratórios e salas do Instituto.",
-    ],
-  },
-  {
-    company: "FEPI - Centro Universitário de Itajubá",
-    position: [
-      {
-        title: "Monitor de laboratório de tecnologia",
-        period: "09-2008 - 12-2008",
-        locale: "Itajubá / MG",
-      },
-    ],
-    achievements: [
-      "Responsável pela manutenção de hardware e software do Laboratório de Processamento de Dados.",
-      "Realizou checklist de instalações, manipulação de diversos sistemas operacionais e monitoramento das máquinas.",
-      "Deu suporte de informática aos alunos.",
     ],
   },
 ];
+
+const PositionEntry = ({
+  position,
+  grouped,
+}: {
+  position: Position;
+  grouped: boolean;
+}) => {
+  return (
+    <li className="relative">
+      {grouped && (
+        <span
+          aria-hidden="true"
+          className="absolute -left-6 top-1.5 h-2 w-2 rounded-full bg-background3"
+        />
+      )}
+      <h4 className="font-bold">{position.title}</h4>
+      <p className="text-xs opacity-75 mb-2">
+        {position.period}
+        {position.locale ? ` · ${position.locale}` : ""}
+      </p>
+      <ul className="list-disc pl-5 space-y-1">
+        {position.achievements.map((achievement, index) => (
+          <li key={`achievement_${index}`} className="leading-6 text-sm">
+            {achievement}
+          </li>
+        ))}
+      </ul>
+    </li>
+  );
+};
 
 export const ProfessionalExperience = () => {
   return (
     <div>
       <Title className="mt-12">Experiência Profissional</Title>
       <ul>
-        {data.map((xp, index) => (
-          <li
-            key={`experience_${index}`}
-            className={`p-2 my-4 ${index % 2 !== 0 ? "bg-background2" : ""}`}
-          >
-            <div>
+        {data.map((xp, index) => {
+          const grouped = xp.positions.length > 1;
+
+          return (
+            <li
+              key={`experience_${index}`}
+              className={`p-2 my-4 ${index % 2 !== 0 ? "bg-background2" : ""}`}
+            >
               <h3 className="text-xl font-bold uppercase">{xp.company}</h3>
-              <div className="mb-4">
-                {xp.position.map((position, i) => (
-                  <div key={`position_${index}_${i}`}>
-                    <p className="font-bold">
-                      {position.title}{" "}
-                      <span className="text-xs opacity-75">
-                        {position.period}
-                        {position.locale ? ` · ${position.locale}` : ""}
-                      </span>
-                    </p>
-                  </div>
-                ))}
-              </div>
-              <ul className="list-disc pl-5 space-y-1">
-                {xp.achievements.map((achievement, i) => (
-                  <li
-                    key={`achievement_${index}_${i}`}
-                    className="leading-6 text-sm"
-                  >
-                    {achievement}
-                  </li>
+              {xp.period && (
+                <p className="text-xs opacity-75">
+                  {xp.period}
+                  {xp.locale ? ` · ${xp.locale}` : ""}
+                </p>
+              )}
+              {xp.summary && <p className="text-sm mt-2">{xp.summary}</p>}
+              <ul className={`mt-4 space-y-6 ${grouped ? "pl-6 ml-1" : ""}`}>
+                {xp.positions.map((position, i) => (
+                  <PositionEntry
+                    key={`position_${index}_${i}`}
+                    position={position}
+                    grouped={grouped}
+                  />
                 ))}
               </ul>
-            </div>
-          </li>
-        ))}
+            </li>
+          );
+        })}
       </ul>
     </div>
   );
