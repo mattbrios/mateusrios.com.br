@@ -13,11 +13,6 @@ const data: Social[] = [
     link: "mailto:mattbrios@gmail.com",
   },
   {
-    name: "WhatsApp",
-    icon: "/images/whatsapp.svg",
-    link: "https://wa.me/5515996236179",
-  },
-  {
     name: "Instagram",
     icon: "/images/instagram.svg",
     link: "https://www.instagram.com/mattbrios/",
@@ -43,7 +38,12 @@ export const SocialSection = () => {
   return (
     <div className="flex flex-wrap gap-2">
       {data.map((social, index) => (
-        <a href={social.link} target="_blank" rel="noreferrer" key={`social_${index}`}>
+        <a
+          href={social.link}
+          target="_blank"
+          rel="noreferrer"
+          key={`social_${index}`}
+        >
           <button className="pr-4 pl-2 py-1 bg-background3 rounded-full flex items-center gap-2 transition-colors hover:bg-background">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img

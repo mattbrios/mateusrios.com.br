@@ -55,7 +55,7 @@ export const Sidebar = () => {
               <Cell description="cadastros atendidos">+8M</Cell>
             </tr>
             <tr>
-              <Cell description="usuários simultâneos">+15k</Cell>
+              <Cell description="usuários simultâneos">+15 mil</Cell>
               <Cell description="aplicações em produção">+70</Cell>
             </tr>
             <tr>

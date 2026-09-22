@@ -13,7 +13,7 @@ const stack = [
 const highlights = [
   "Suporta 15 mil+ usuários simultâneos e uma base de mais de 8 milhões de usuários cadastrados.",
   "Responsável pela identidade visual, design completo de UI/UX, arquitetura frontend e automação de CI/CD.",
-  "Estruturou o painel administrativo e conduziu a evolução da API e de suas integrações.",
+  "Estruturação do painel administrativo e evolução da API e de suas integrações.",
 ];
 
 export const HighlightedProject = () => {
