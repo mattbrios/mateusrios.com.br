@@ -16,10 +16,10 @@ const geistMono = Geist_Mono({
 });
 
 const SITE_URL = "https://www.mateusrios.com.br";
-const TITLE = "Eu sou Mateus Rios | Seja bem vindo e sinta-se a vontade!";
+const TITLE =
+  "Mateus Rios | Desenvolvedor Full Stack Sênior — React, Next.js e Node.js";
 const DESCRIPTION = `Desenvolvedor Full Stack Sênior com foco em Front-end (React, Next.js, Node.js, TypeScript) e UI/UX Design. Mais de ${calcExperienceYears()} anos como dev, designer e tech lead em todas as etapas do desenvolvimento de software web.`;
 const EMAIL = "mattbrios@gmail.com";
-const PHONE = "+55 15 99623-6179";
 
 export const metadata: Metadata = {
   metadataBase: new URL(SITE_URL),
@@ -50,6 +50,7 @@ export const metadata: Metadata = {
     "Claude Code",
     "desenvolvimento assistido por IA",
     "Desenvolvedor Full Stack Sênior",
+    "Desenvolvedor Front-end Sênior",
   ],
   authors: [{ name: "Mateus Rios", url: SITE_URL }],
   creator: "Mateus Rios",
@@ -109,7 +110,10 @@ const personJsonLd = {
   "@type": "Person",
   name: "Mateus Branco Rios",
   alternateName: "Mateus Rios",
-  jobTitle: "Desenvolvedor Full Stack Sênior",
+  jobTitle: [
+    "Desenvolvedor Full Stack Sênior",
+    "Desenvolvedor Front-end Sênior",
+  ],
   description: DESCRIPTION,
   url: SITE_URL,
   image: `${SITE_URL}/images/memoji.png`,
@@ -120,7 +124,6 @@ const personJsonLd = {
     "https://www.instagram.com/mattbrios/",
   ],
   email: EMAIL,
-  telephone: PHONE,
   knowsAbout: [
     "React",
     "Next.js",
@@ -130,6 +133,10 @@ const personJsonLd = {
     "UI/UX Design",
     "Design Systems",
     "Spec Driven Development",
+    "Claude Code",
+    "Micro Frontends",
+    "Desenvolvimento assistido por IA",
+    "PostgreSQL",
   ],
   worksFor: {
     "@type": "Organization",
